@@ -30,7 +30,7 @@
   ========================== -->
   <header class="hero">
     <div class="container">
-      <h1>Yeahn Kim</h1>
+      <h1>김예안</h1>
       <p class="subtitle">Software Engineer</p>
       <p class="intro">
         사용자의 업무를 이해하고,
@@ -102,8 +102,8 @@
             Uber의 Java nullability 정적 분석 도구 NullAway의
             기능을 확장했습니다.
             대학원 연구부터 졸업 후까지 프로젝트에 참여하며
-            generic type 분석과 외부 라이브러리 및 JDK의
-            nullability 정보를 NullAway에서 활용하기 위한
+            generic method 기능과 외부 라이브러리의
+            nullability 정보를 NullAway에서 활용하는
             기능을 구현했습니다.
           </p>
 
@@ -127,11 +127,7 @@
             </li>
 
             <li>
-              InferSubstitutionViaAssignmentContextVisitor 구현
-            </li>
-
-            <li>
-              다양한 generic structure에 대한 테스트 작성
+              구현한 모든 기능에 대한 테스트 작성
             </li>
           </ul>
 
@@ -140,11 +136,7 @@
 
           <ul>
             <li>
-              외부 Java 코드에서 nullability 정보 추출
-            </li>
-
-            <li>
-              javac plugin을 통해 nullability 정보를 JSON으로 직렬화
+              javac plugin을 통해 외부 라이브러리 코드의 nullability 정보를 추출해 JSON 형태로 저장
             </li>
 
             <li>
@@ -152,7 +144,7 @@
             </li>
 
             <li>
-              NullAway에서 external model을 읽어 사용할 수 있도록 연동
+              생성된 astubx 파일을 NullAway에서 external model을 읽어 사용할 수 있도록 연동
             </li>
 
             <li>
@@ -164,65 +156,142 @@
 
           <h4>Open Source Contributions</h4>
 
-          <ul class="links">
-            <li>
-              <a
-                href="https://github.com/uber/NullAway/pull/1131"
-                target="_blank">
-                PR #1131
-              </a>
-              - Generic method type argument inference
-            </li>
-
-            <li>
-              <a
-                href="https://github.com/uber/NullAway/pull/1243"
-                target="_blank">
-                PR #1243
-              </a>
-              - JDK nullability model / astubx generation
-            </li>
-
-            <li>
-              <a
-                href="https://github.com/uber/NullAway/pull/1316"
-                target="_blank">
-                PR #1316
-              </a>
-            </li>
-
-            <li>
-              <a
-                href="https://github.com/uber/NullAway/pull/1344"
-                target="_blank">
-                PR #1344
-              </a>
-            </li>
-
-            <li>
-              <a
-                href="https://github.com/uber/NullAway/pull/1370"
-                target="_blank">
-                PR #1370
-              </a>
-            </li>
-
-            <li>
-              <a
-                href="https://github.com/uber/NullAway/pull/1432"
-                target="_blank">
-                PR #1432
-              </a>
-            </li>
-
-            <li>
-              <a
-                href="https://github.com/uber/NullAway/pull/1456"
-                target="_blank">
-                PR #1456
-              </a>
-            </li>
-          </ul>
+          <div class="pr-group">
+            <p class="pr-category">
+              <strong>Generic Type & JSpecify Support</strong>
+            </p>
+          
+            <ul class="links">
+              <li>
+                <a
+                  href="https://github.com/uber/NullAway/pull/958"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  PR #958
+                </a>
+                <span>
+                  — Handle generic type arguments in @NullUnmarked classes
+                </span>
+              </li>
+          
+              <li>
+                <a
+                  href="https://github.com/uber/NullAway/pull/1053"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  PR #1053
+                </a>
+                <span>
+                  — Initial generic method support with explicit type arguments
+                </span>
+              </li>
+          
+              <li>
+                <a
+                  href="https://github.com/uber/NullAway/pull/1070"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  PR #1070
+                </a>
+                <span>
+                  — Check type parameter nullability using call-site type arguments
+                </span>
+              </li>
+          
+              <li>
+                <a
+                  href="https://github.com/uber/NullAway/pull/1131"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  PR #1131
+                </a>
+                <span>
+                  — Infer generic method type arguments from assignment context
+                </span>
+              </li>
+            </ul>
+          </div>
+          
+          
+          <div class="pr-group">
+            <p class="pr-category">
+              <strong>JDK & External Library Models</strong>
+            </p>
+          
+            <ul class="links">
+              <li>
+                <a
+                  href="https://github.com/uber/NullAway/pull/1243"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  PR #1243
+                </a>
+                <span>
+                  — Generate astubx models from jdk-javac-plugin JSON output
+                </span>
+              </li>
+          
+              <li>
+                <a
+                  href="https://github.com/uber/NullAway/pull/1316"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  PR #1316
+                </a>
+                <span>
+                  — Skip serialization for classes and methods without annotations
+                </span>
+              </li>
+          
+              <li>
+                <a
+                  href="https://github.com/uber/NullAway/pull/1344"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  PR #1344
+                </a>
+                <span>
+                  — Fix wildcard method-name parsing in external library models
+                </span>
+              </li>
+          
+              <li>
+                <a
+                  href="https://github.com/uber/NullAway/pull/1370"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  PR #1370
+                </a>
+                <span>
+                  — Add method type parameter upper bounds to astubx models
+                </span>
+              </li>
+          
+              <li>
+                <a
+                  href="https://github.com/uber/NullAway/pull/1432"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  PR #1432
+                </a>
+                <span>
+                  — Extract nested annotation information with jdk-javac-plugin
+                </span>
+              </li>
+          
+              <li>
+                <a
+                  href="https://github.com/uber/NullAway/pull/1456"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  PR #1456
+                </a>
+                <span>
+                  — Support nested annotation information in astubx library models
+                </span>
+              </li>
+            </ul>
+          </div>
         </article>
 
 
