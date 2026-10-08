@@ -1,15 +1,707 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QA Portfolio</title>
-</head>
-<body>
-    <header>
-        <h1>QA Portfolio</h1>
-    </header>
 
-    <p>QA 포트폴리오 테스트 페이지입니다.</p>
+    <meta
+        name="description"
+        content="김예안의 QA 엔지니어 포트폴리오. 소프트웨어 테스팅, 정적 분석, 오류 검출 및 품질 개선 프로젝트를 소개합니다."
+    >
+
+    <title>김예안 | QA Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ========================================
+         Sidebar Navigation
+    ======================================== -->
+
+    <aside class="sidebar">
+
+        <div class="sidebar-header">
+            <h2>YE AHN KIM</h2>
+            <p>QA Portfolio</p>
+        </div>
+
+        <nav class="navigation" aria-label="메인 내비게이션">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="sidebar-footer">
+            <p>© 2026 Ye Ahn Kim</p>
+        </div>
+
+    </aside>
+
+
+    <!-- ========================================
+         Main Content
+    ======================================== -->
+
+    <main class="main-content">
+
+
+        <!-- ====================================
+             Home
+        ==================================== -->
+
+        <section id="home" class="hero section">
+
+            <div class="hero-content">
+
+                <span class="eyebrow">
+                    SOFTWARE QUALITY ASSURANCE
+                </span>
+
+                <h1>
+                    소프트웨어의 품질을<br>
+                    생각하는 개발자,<br>
+                    김예안입니다.
+                </h1>
+
+                <p class="hero-description">
+                    소프트웨어는 단순히 동작하는 것뿐만 아니라
+                    다양한 상황에서도 올바르게 동작해야 한다고 생각합니다.
+                    <br><br>
+                    소프트웨어 개발과 정적 분석 도구 개선,
+                    오류 검출 프로젝트를 통해 쌓은 경험을 바탕으로
+                    신뢰할 수 있는 소프트웨어를 만드는 데 기여하고 싶습니다.
+                </p>
+
+                <a href="#about" class="button">
+                    About Me →
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ====================================
+             About Me
+        ==================================== -->
+
+        <section id="about" class="section">
+
+            <div class="section-heading">
+                <span class="section-number">01</span>
+                <h2>About Me</h2>
+            </div>
+
+
+            <!-- Introduction -->
+
+            <div class="content-card">
+
+                <h3>Introduction</h3>
+
+                <p>
+                    안녕하세요. 컴퓨터공학을 전공하고
+                    University of California, Riverside에서
+                    컴퓨터과학 석사 학위를 취득한 김예안입니다.
+                </p>
+
+                <p>
+                    학부와 대학원에서 다양한 소프트웨어를 개발하며
+                    프로그램의 동작 원리를 이해하고,
+                    예상하지 못한 오류를 찾아 해결하는 과정에
+                    흥미를 느꼈습니다.
+                </p>
+
+                <p>
+                    특히 학부에서는 Rust 프로그램의
+                    동시성 오류를 검출하는 도구를 개발했고,
+                    대학원에서는 Java 정적 분석 도구인
+                    NullAway의 제네릭 메서드 지원 기능을 개선했습니다.
+                </p>
+
+                <p>
+                    이러한 경험을 통해 오류를 수정하는 것뿐만 아니라,
+                    오류가 발생할 수 있는 조건을 분석하고
+                    사전에 예방하는 일의 중요성을 배웠습니다.
+                </p>
+
+                <p>
+                    앞으로도 개발 경험과 분석 역량을 바탕으로
+                    소프트웨어의 안정성과 신뢰성을 높이는
+                    QA 엔지니어로 성장하고 싶습니다.
+                </p>
+
+            </div>
+
+
+            <!-- Strengths -->
+
+            <div class="content-card">
+
+                <h3>What I Value</h3>
+
+                <div class="education-item">
+
+                    <h4>01. 문제의 원인 이해</h4>
+
+                    <p>
+                        문제가 발생했을 때 표면적인 현상만 확인하기보다
+                        코드의 구조와 실행 흐름을 분석하여
+                        근본적인 원인을 이해하고자 합니다.
+                    </p>
+
+                </div>
+
+                <div class="education-item">
+
+                    <h4>02. 다양한 상황을 고려한 검증</h4>
+
+                    <p>
+                        정상적인 동작뿐만 아니라
+                        예외적인 입력과 복잡한 실행 조건에서도
+                        소프트웨어가 올바르게 동작하는지
+                        확인하는 것을 중요하게 생각합니다.
+                    </p>
+
+                </div>
+
+                <div class="education-item">
+
+                    <h4>03. 지속적인 개선</h4>
+
+                    <p>
+                        기존 시스템의 구조를 이해하고
+                        부족한 부분을 개선하는 과정에서
+                        더 안정적이고 유지보수하기 좋은
+                        소프트웨어를 만들고자 노력합니다.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Education -->
+
+            <div class="content-card">
+
+                <h3>Education</h3>
+
+                <div class="education-item">
+
+                    <h4>
+                        University of California, Riverside
+                    </h4>
+
+                    <p>
+                        Master of Science in Computer Science
+                    </p>
+
+                    <p>
+                        2023.09 – 2025.03
+                    </p>
+
+                    <p>
+                        주요 학습 분야:
+                        Software Testing & Analysis,
+                        Compiler Construction,
+                        Computer Security,
+                        Software Security
+                    </p>
+
+                </div>
+
+                <div class="education-item">
+
+                    <h4>
+                        한동대학교
+                    </h4>
+
+                    <p>
+                        컴퓨터공학심화 / AI·컴퓨터공학심화
+                    </p>
+
+                    <p>
+                        2019.03 – 2023.02
+                    </p>
+
+                    <p>
+                        주요 경험:
+                        프로그래밍, 운영체제,
+                        소프트웨어 개발 및 캡스톤 프로젝트
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ====================================
+             Skills
+        ==================================== -->
+
+        <section id="skills" class="section">
+
+            <div class="section-heading">
+                <span class="section-number">02</span>
+                <h2>Skills</h2>
+            </div>
+
+            <p class="section-description">
+                학업과 프로젝트를 통해 경험한 기술 및
+                소프트웨어 분석 역량입니다.
+            </p>
+
+
+            <div class="card-grid">
+
+
+                <!-- Programming -->
+
+                <article class="content-card skill-card">
+
+                    <h3>Programming</h3>
+
+                    <p>
+                        다양한 언어를 활용한
+                        프로그램 개발 및 디버깅 경험
+                    </p>
+
+                    <div class="tags">
+                        <span>Java</span>
+                        <span>Python</span>
+                        <span>C</span>
+                        <span>C++</span>
+                        <span>Rust</span>
+                    </div>
+
+                </article>
+
+
+                <!-- Software Testing -->
+
+                <article class="content-card skill-card">
+
+                    <h3>Software Testing</h3>
+
+                    <p>
+                        테스트 케이스 작성과
+                        소프트웨어 오류 분석 및 검증 경험
+                    </p>
+
+                    <div class="tags">
+                        <span>Test Case Design</span>
+                        <span>Mutation Testing</span>
+                        <span>Debugging</span>
+                    </div>
+
+                </article>
+
+
+                <!-- Static Analysis -->
+
+                <article class="content-card skill-card">
+
+                    <h3>Program Analysis</h3>
+
+                    <p>
+                        정적 분석 및 동적 분석을 활용한
+                        소프트웨어 결함 검출 경험
+                    </p>
+
+                    <div class="tags">
+                        <span>Static Analysis</span>
+                        <span>Dynamic Analysis</span>
+                        <span>LLVM</span>
+                    </div>
+
+                </article>
+
+
+                <!-- Tools -->
+
+                <article class="content-card skill-card">
+
+                    <h3>Development Tools</h3>
+
+                    <p>
+                        개발 환경 구성 및
+                        버전 관리 도구 활용 경험
+                    </p>
+
+                    <div class="tags">
+                        <span>Git</span>
+                        <span>GitHub</span>
+                        <span>VS Code</span>
+                        <span>IntelliJ IDEA</span>
+                    </div>
+
+                </article>
+
+
+                <!-- Environment -->
+
+                <article class="content-card skill-card">
+
+                    <h3>Environment</h3>
+
+                    <p>
+                        다양한 운영체제 환경에서의
+                        개발 및 프로그램 분석 경험
+                    </p>
+
+                    <div class="tags">
+                        <span>Linux</span>
+                        <span>macOS</span>
+                        <span>Windows</span>
+                    </div>
+
+                </article>
+
+
+                <!-- Collaboration -->
+
+                <article class="content-card skill-card">
+
+                    <h3>Collaboration</h3>
+
+                    <p>
+                        팀 프로젝트와 오픈소스 기여를 통한
+                        협업 및 코드 관리 경험
+                    </p>
+
+                    <div class="tags">
+                        <span>GitHub Pull Request</span>
+                        <span>Code Review</span>
+                        <span>Documentation</span>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ====================================
+             Projects
+        ==================================== -->
+
+        <section id="projects" class="section">
+
+            <div class="section-heading">
+                <span class="section-number">03</span>
+                <h2>Projects</h2>
+            </div>
+
+            <p class="section-description">
+                소프트웨어의 오류를 분석하고,
+                올바른 동작을 검증하며,
+                품질을 개선한 프로젝트들입니다.
+            </p>
+
+
+            <div class="project-grid">
+
+
+                <!-- Project 1: NullAway -->
+
+                <article class="content-card project-card">
+
+                    <div class="project-category">
+                        OPEN SOURCE · STATIC ANALYSIS
+                    </div>
+
+                    <h3>
+                        NullAway
+                    </h3>
+
+                    <p>
+                        Uber에서 개발한 Java 정적 분석 도구
+                        NullAway의 기능 개선에 참여했습니다.
+                    </p>
+
+                    <p>
+                        NullAway는 컴파일 단계에서
+                        Null Pointer Exception이 발생할 수 있는
+                        코드를 검사하는 도구입니다.
+                    </p>
+
+                    <p>
+                        기존에 지원이 부족했던 제네릭 메서드에
+                        대한 Nullability 검사를 구현하고,
+                        JSpecify 표준에 맞게
+                        타입 인자를 분석하도록 개선했습니다.
+                    </p>
+
+                    <p>
+                        특히 명시적으로 타입 인자를 전달하지 않는
+                        메서드 호출에서도 대입문의 타입 정보를
+                        활용하여 타입 인자를 추론하는 기능을
+                        구현했습니다.
+                    </p>
+
+                    <p>
+                        또한 다양한 제네릭 메서드 호출 상황에 대한
+                        테스트 케이스를 작성하고,
+                        Nullability 위반에 대한 오류 메시지를
+                        개선했습니다.
+                    </p>
+
+                    <div class="tags">
+                        <span>Java</span>
+                        <span>NullAway</span>
+                        <span>JSpecify</span>
+                        <span>Static Analysis</span>
+                        <span>Testing</span>
+                    </div>
+
+                    <a
+                        href="https://github.com/uber/NullAway/pull/1131"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-link"
+                    >
+                        주요 Pull Request →
+                    </a>
+
+                </article>
+
+
+
+                <!-- Project 2: Atomicity Violation -->
+
+                <article class="content-card project-card">
+
+                    <div class="project-category">
+                        CAPSTONE · DYNAMIC ANALYSIS
+                    </div>
+
+                    <h3>
+                        Dynamic Atomicity Violation
+                        Detection for Rust
+                    </h3>
+
+                    <p>
+                        Rust 프로그램에서 발생하는
+                        동시성 오류 중 하나인
+                        Atomicity Violation을 검출하는
+                        동적 분석 도구를 개발했습니다.
+                    </p>
+
+                    <p>
+                        LLVM Pass를 활용하여
+                        프로그램 실행 중 메모리 접근 정보를
+                        기록하고, 생성된 로그를 분석하여
+                        오류 패턴을 탐지하는 방식입니다.
+                    </p>
+
+                    <p>
+                        프로젝트에서 Python 기반 분석 모듈
+                        개발을 주로 담당했으며,
+                        검출된 오류의 위치를 시각적으로
+                        확인할 수 있도록 VS Code 확장 기능
+                        개발에도 참여했습니다.
+                    </p>
+
+                    <p>
+                        작성된 테스트 케이스를 통해
+                        오류 검출 결과를 확인하고,
+                        분석 도구의 동작을 검증했습니다.
+                    </p>
+
+                    <div class="tags">
+                        <span>Rust</span>
+                        <span>LLVM</span>
+                        <span>Python</span>
+                        <span>Dynamic Analysis</span>
+                        <span>Concurrency</span>
+                    </div>
+
+                    <span class="project-note">
+                        학부 캡스톤 프로젝트
+                    </span>
+
+                </article>
+
+
+
+                <!-- Project 3: Mutation Testing -->
+
+                <article class="content-card project-card">
+
+                    <div class="project-category">
+                        ACADEMIC · SOFTWARE TESTING
+                    </div>
+
+                    <h3>
+                        Mutation Testing Program
+                    </h3>
+
+                    <p>
+                        소프트웨어 테스트의 효과를
+                        평가하는 기법인 Mutation Testing을
+                        활용한 프로그램을 구현했습니다.
+                    </p>
+
+                    <p>
+                        원본 프로그램을 일부 변형한
+                        Mutant를 대상으로 테스트를 수행하고,
+                        테스트가 변형된 프로그램의
+                        차이를 검출하는지 확인하는 과정입니다.
+                    </p>
+
+                    <p>
+                        Bash Script와 C 프로그램을 작성하여
+                        서로 다른 Coverage Criteria에 따른
+                        Mutation Testing을 실행했습니다.
+                    </p>
+
+                    <p>
+                        이 프로젝트를 통해
+                        단순한 테스트 실행을 넘어
+                        테스트 자체가 결함을 발견하는 데
+                        얼마나 효과적인지 평가하는
+                        방법을 경험했습니다.
+                    </p>
+
+                    <div class="tags">
+                        <span>C</span>
+                        <span>Bash</span>
+                        <span>Mutation Testing</span>
+                        <span>Code Coverage</span>
+                    </div>
+
+                    <span class="project-note">
+                        대학원 Software Testing 관련 프로젝트
+                    </span>
+
+                </article>
+
+
+
+                <!-- Project 4: Finance Application -->
+
+                <article class="content-card project-card">
+
+                    <div class="project-category">
+                        PERSONAL PROJECT · APPLICATION
+                    </div>
+
+                    <h3>
+                        Church Finance Application
+                    </h3>
+
+                    <p>
+                        교회 재정 관리를 위해 개발한
+                        Python 기반 데스크톱 프로그램입니다.
+                    </p>
+
+                    <p>
+                        SQLite 데이터베이스를 활용하여
+                        헌금 및 지출 내역을 관리하고,
+                        날짜와 항목별로 데이터를
+                        조회할 수 있도록 구현했습니다.
+                    </p>
+
+                    <p>
+                        사용자 입력값 검증,
+                        데이터 수정 및 삭제,
+                        Excel 데이터 가져오기와 내보내기 등
+                        실제 사용 환경에서 필요한 기능을
+                        구현했습니다.
+                    </p>
+
+                    <p>
+                        프로그램을 사용하는 사람의
+                        업무 흐름을 고려하고,
+                        데이터의 정확성과 사용 편의성을
+                        중요하게 생각하며 개발했습니다.
+                    </p>
+
+                    <div class="tags">
+                        <span>Python</span>
+                        <span>SQLite</span>
+                        <span>Tkinter</span>
+                        <span>Input Validation</span>
+                    </div>
+
+                    <span class="project-note">
+                        개인 개발 프로젝트
+                    </span>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ====================================
+             Contact
+        ==================================== -->
+
+        <section id="contact" class="section contact-section">
+
+            <div class="section-heading">
+                <span class="section-number">04</span>
+                <h2>Contact</h2>
+            </div>
+
+            <div class="content-card">
+
+                <h3>Get in Touch</h3>
+
+                <p>
+                    소프트웨어의 품질과 안정성을 높이기 위해
+                    지속적으로 배우고 성장하고 있습니다.
+                </p>
+
+                <p>
+                    더 자세한 개발 경험과 프로젝트 내용은
+                    GitHub에서 확인하실 수 있습니다.
+                </p>
+
+                <a
+                    href="https://github.com/haewiful"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="button"
+                >
+                    GitHub 방문하기 →
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ====================================
+             Footer
+        ==================================== -->
+
+        <footer class="main-footer">
+
+            <p>
+                © 2026 Ye Ahn Kim. All rights reserved.
+            </p>
+
+        </footer>
+
+    </main>
+
 </body>
+
 </html>
